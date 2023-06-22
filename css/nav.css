@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&family=Rubik+Puddles&family=Space+Grotesk&family=Teko:wght@300&family=Tilt+Prism&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1ffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar */
+/* hanburger menu */
+.rmenu{
+    width: 53px;
+    /* height: 118px; */
+    position: absolute;
+    right: 47px;
+    top: 42px;
+    cursor: pointer;
+    display: none;
+}
+.rmenu .line{
+    border: 2px solid;
+    margin: 4px;
+}
+/* navbar */
+.navbar {
+    display: flex;
+}
+
+.logo img {
+    width: 90px;
+    border: 3px solid black;
+    border-radius: 84%;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-top: 8px;
+    margin-left: 15px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box a {
+    text-decoration: none;
+    color: rgb(13, 15, 17);
+}
+
+.box {
+    margin: 18px;
+    /* padding: 5px; */
+    font-size: 20px;
+}
+
+.right {
+    position: absolute;
+    right: 47px;
+    top: 32px;
+    display: flex;
+}
+
+.btn {
+    font-size: 17px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(169 222 241);
+    border: 2px solid #120f0f;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.rbtn {
+    color: #241818;
+    text-decoration: none;
+    /* background-color: none; */
+}
+.btn:hover{
+    background-color: #f19389;
+}
+.box a:hover ,a.active{
+    color: #ef3a26;
+}
+
+
+/* dropdowns */
+/* details */
+ #dp1{
+    position: absolute;
+    top: 75px;
+    left: 295px;
+    list-style: none;
+ }
+.det{
+    top: 12px;
+    /* margin: 21px; */
+    /* position: relative; */
+    background-color: #dee9ea;
+    padding: 13px;
+    display: none;
+}
+#dl{
+    padding-bottom: 7px;
+    margin-top: 27px;
+}
+.mid #dl:hover .det{
+        display: block;
+}
+.dd{
+    padding: 5px;
+}
+.dd a{
+    text-decoration: none;
+    /* color: blue; */
+}
+/* Coachings */
+#dp2 .co{
+    list-style: none;
+    background-color: #dee9ea;
+    position: absolute;
+    padding: 21px;
+    margin-left: 34px;
+    display: none;
+}
+.dd2{
+    padding: 5px;
+}
+.mid #dp2:hover .co{
+    display: block;
+}
+
+/* section1-home */
+.navbar #bg{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1; 
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+.sec1 {
+    height: 85vh;
+}
+
+.sec1 .text {
+    display: inline-flex;
+    position: absolute;
+    right: 271px;
+    top: 254px;
+    font-size: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+/* only mulitple text animation ,not with typing animation */
+.item {
+    overflow: hidden;
+    line-height: 41px;
+    height: 41px;
+    /* background-color: antiquewhite; */
+}
+
+.item li {
+    animation: slide 8s steps(5) infinite;
+    position: relative;
+    top: 0;
+}
+
+@keyframes slide {
+    100% {
+        top: -207px;
+    }
+}
+
+.item li span {
+    position: relative;
+    color: #ef3a26;
+    font-weight: bold;
+}
+
+.text ul {
+    list-style: none;
+}
+
+.st {
+    margin-right: 6px;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 311px;
+    top: 356px;
+    text-align: center;
+}
+.con span{
+    font-size: 30px;
+    line-height: 47px;
+}
+.con #pr{
+    font-weight: bold;
+    color: #141413;
+}
+.con .btn2{
+    background: none;
+    width: 96px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 15px auto;
+    border: 3px solid black;
+    border-radius: 17px;
+    font-size: 20px;
+    background-color: aqua;
+}
+.con .btn2 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.btn2:hover{
+    background-color:aquamarine;
+}
