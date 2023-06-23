@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/section5.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
     <div id="home">
         <nav class="navbar">
@@ -165,11 +164,11 @@
         <h2>Contact Us</h2>
         <div class="sec6a">
             <div class="sec6a1">Should you have any enquiries, comments or requests, send us a message using our online form and we’ll respond as soon as possible.</div>
-                <form action="#" method="post">
-                    <input type="text" name="name" class="inp" placeholder="Enter your name">
-                    <input type="text" name="phone" class="inp" placeholder="Enter your Phone number">
-                    <input type="email" name="mail" class="inp" placeholder="Enter your Email address">
-                    <textarea name="msg" id="area" class="inp" cols="30" rows="10" placeholder="Message"></textarea>
+                <form action="css/success.html" method="post" onsubmit="return validation()">
+                    <input type="text" id="name" class="inp" placeholder="Enter your name" required/>
+                    <input type="text" id="phone" class="inp" placeholder="Enter your Phone number" required/>
+                    <input type="email" id="mail" class="inp" placeholder="Enter your Email address" required/>
+                    <textarea name="msg" id="area" class="inp" cols="30" rows="10" placeholder="Message" required></textarea>
                     <button type="submit"  class="sub">Submit</button> 
                 </form>
         </div>
@@ -177,6 +176,7 @@
     </section>
     <footer>Copyright 2023 © All Rights Reserved by We Are Players Cricket Academy| Website developed by <Strong>velicheti revanth sai</Strong></footer>
     <script src="menu-bar.js"></script>
+    <script src="validation.js"></script>
 </body>
 
 </html>
